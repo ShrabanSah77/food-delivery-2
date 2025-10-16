@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Carousel from "../components/Carousel";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
-import SliderCarousel from "../components/Carousel";
+
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <Navbar />
       </div>
       <div>
-        <SliderCarousel />
+        <Carousel />
       </div>
       <div>
         <Card />
