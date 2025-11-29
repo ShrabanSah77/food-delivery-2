@@ -1,57 +1,38 @@
-import React from "react";
-import { Carousel } from "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react'
 
-<div
-  id="carouselExampleIndicators"
-  className="carousel slide"
-  data-bs-ride="carousel"
->
+import burger from "../images/rsz_1burger.jpg";
+import pizza from "../images/rsz_1roll.jpg";
+import momo from "../images/rsz_2burger.jpg";
+
+export default function Carousel() {
+  return (
+    <div>
+      <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-indicators">
-    <button
-      type="button"
-      data-bs-target="#carouselExampleIndicators"
-      data-bs-slide-to="0"
-      className="active"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carouselExampleIndicators"
-      data-bs-slide-to="1"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#carouselExampleIndicators"
-      data-bs-slide-to="2"
-    ></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="/rsz_1burger.jpg" className="d-block w-100" alt="Burger" />
+      <img src="../images/burger.jpg" className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="/rsz_2pizza.jpg" className="d-block w-100" alt="Pizza" />
+      <img src="../images/paste.jpg" className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src="/rsz_3momo.jpg" className="d-block w-100" alt="Momo" />
+      <img src="../images/pizza.jpg" className="d-block w-100" alt="..."/>
     </div>
   </div>
-  <button
-    className="carousel-control-prev"
-    type="button"
-    data-bs-target="#carouselExampleIndicators"
-    data-bs-slide="prev"
-  >
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Previous</span>
   </button>
-  <button
-    className="carousel-control-next"
-    type="button"
-    data-bs-target="#carouselExampleIndicators"
-    data-bs-slide="next"
-  >
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Next</span>
   </button>
-</div>;
+</div>
+    </div>
+  )
+}
